@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Gyrosoft.Medea.DataAccess.Entity" Collapsed="true">
+    <Position X="12" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DataAccess\Entity.cs</FileName>
+      <HashCode>AABAEAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Clinic" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Clinic.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Snapshot" Collapsed="true">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Snapshot.cs</FileName>
+      <HashCode>AAAAAAAEEAAAAIAEAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Department" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Department.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAFAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Examination" Collapsed="true">
+    <Position X="18.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Examination.cs</FileName>
+      <HashCode>AAAAIAAAAADAAAMFAAAAAAEAAABAAAAAAAAIAUAFCEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.ExaminationKind" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\ExaminationKind.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.ExaminationSchedule" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\ExaminationSchedule.cs</FileName>
+      <HashCode>AAAAABAAAACAAAAEAAAAAQAAAAAAAAAAAAAAAQABSAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Indication" Collapsed="true">
+    <Position X="16.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Indication.cs</FileName>
+      <HashCode>AAAAAAAEEAAACIAEAAAAAAAAAAAAEAAAAAAAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.IndicationCategory" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\IndicationCategory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAAAAAAAAAgQAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.IndicationDefinition" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\IndicationDefinition.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAASAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Patient" Collapsed="true">
+    <Position X="23.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Patient.cs</FileName>
+      <HashCode>AAAAAAAAAAAIAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Person" Collapsed="true">
+    <Position X="22.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Person.cs</FileName>
+      <HashCode>AAEAAEAAAAIAAAAEAAAUAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.BusinessModel.Physician" Collapsed="true">
+    <Position X="21" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BusinessModel\Physician.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gyrosoft.Medea.DataAccess.NamedEntity" Collapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DataAccess\NamedEntity.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAFAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

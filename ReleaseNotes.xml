@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<releaseNotes vendor="Gyro Software"  project="Medea">
+	<release date="yyyy-mm-dd" build="n.n.n.nnnnn">
+		<note subsystem="" category="" author="">
+			Note text goes here...
+		</note>
+	</release>
+</releaseNotes>

@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationAboutMenuItemFmt" xml:space="preserve">
+    <value>&amp;О программе {0}...</value>
+  </data>
+  <data name="ApplicationFormCaptionFmt" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{0}=ApplicationTitle; {1}=Edition</comment>
+  </data>
+  <data name="ApplicationFormCaptionFmtWithVersion" xml:space="preserve">
+    <value>{0} (Сборка {2}, {1})</value>
+    <comment>{0}=ApplicationTitle; {1}=Edition; {2}=Version</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>Medea</value>
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="ButtonChange" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>НТК "Азимут плюс"</value>
+  </data>
+  <data name="ConfirmDeleteEntity" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить этот объект?</value>
+  </data>
+  <data name="ConfirmDeleteItem" xml:space="preserve">
+    <value>Вы действительно хотите удалить '{0}'?</value>
+    <comment>{0}=Item name</comment>
+  </data>
+  <data name="ConfirmDeleteSnapshots" xml:space="preserve">
+    <value>Выбрано снимков для удаления: {0}. Удалить?</value>
+    <comment>{0}=count</comment>
+  </data>
+  <data name="ConfirmDeleteTree" xml:space="preserve">
+    <value>Вы действительно хотите удалить '{0}' и все подчиненные элементы?</value>
+    <comment>{0}=Item name</comment>
+  </data>
+  <data name="ConfirmSaveExamination" xml:space="preserve">
+    <value>Сохранить данные обследования?</value>
+  </data>
+  <data name="ConfirmSavePatient" xml:space="preserve">
+    <value>Сохранить данные пациента?</value>
+  </data>
+  <data name="EditionDemo" xml:space="preserve">
+    <value>Демонстрационная версия</value>
+  </data>
+  <data name="EditionEnterprise" xml:space="preserve">
+    <value>Корпоративная версия</value>
+  </data>
+  <data name="EditionPersonal" xml:space="preserve">
+    <value>Персональная версия</value>
+  </data>
+  <data name="ErrorCreateIndicationCategory" xml:space="preserve">
+    <value>Ошибка создания новой категории признаков.</value>
+  </data>
+  <data name="ErrorCreateIndicationDefinition" xml:space="preserve">
+    <value>Ошибка создания нового признака.</value>
+  </data>
+  <data name="ErrorDeleteEntity" xml:space="preserve">
+    <value>Невозможно удалить объект, на который имеются ссылки.</value>
+  </data>
+  <data name="ErrorEmptyName" xml:space="preserve">
+    <value>Имя объекта не может быть пустым или состоящим только из пробелов.</value>
+  </data>
+  <data name="ErrorExaminationValidation" xml:space="preserve">
+    <value>Ошибки при проверке данных обследования:</value>
+  </data>
+  <data name="ErrorExaminationValidationKind" xml:space="preserve">
+    <value>Не указан вид обследования.</value>
+  </data>
+  <data name="ErrorExaminationValidationPatient" xml:space="preserve">
+    <value>Не указан пациент.</value>
+  </data>
+  <data name="ErrorExaminationValidationPhysician" xml:space="preserve">
+    <value>Не указан врач.</value>
+  </data>
+  <data name="ErrorHResult" xml:space="preserve">
+    <value>Ошибка внешнего компонента COM 0x{0:X}.</value>
+  </data>
+  <data name="ErrorImproperConfiguration" xml:space="preserve">
+    <value>Конфигурация приложения некорретна.</value>
+  </data>
+  <data name="ErrorIndicationUsed" xml:space="preserve">
+    <value>Признак '{0}' уже используется в одном или более обследованиях.</value>
+  </data>
+  <data name="ErrorInvalidName" xml:space="preserve">
+    <value>Введено некорретное имя.</value>
+  </data>
+  <data name="ErrorSaveData" xml:space="preserve">
+    <value>Ошибка сохранения данных.</value>
+  </data>
+  <data name="ErrorShowOptionPage" xml:space="preserve">
+    <value>Невозможно отобразить страницу свойств.</value>
+  </data>
+  <data name="ErrorVMBadDeviceName" xml:space="preserve">
+    <value>Устройство {0} не найдено в системе.</value>
+    <comment>{0}=Device name</comment>
+  </data>
+  <data name="ErrorVMBadDirectXVersion" xml:space="preserve">
+    <value>Не установлен DirectX версии 8.1 или выше.</value>
+  </data>
+  <data name="ErrorVMBadGrabberMediaFormat" xml:space="preserve">
+    <value>Некорректный формат носителя компонента захвата.</value>
+  </data>
+  <data name="ErrorVMCantGrab" xml:space="preserve">
+    <value>Ошибка захвата кадра.</value>
+  </data>
+  <data name="ErrorVMInvalidVideoWindow" xml:space="preserve">
+    <value>Невозможно отобразить потоковое видео в указанном окне.</value>
+  </data>
+  <data name="ErrorVMNoFilterGraph" xml:space="preserve">
+    <value>Компонент FilterGraph библиотеки DirectShow не установлен или не зарегистрирован в системе.</value>
+  </data>
+  <data name="ErrorVMNoSampleGrabber" xml:space="preserve">
+    <value>Компонент SampleGrabber библиотеки DirectShow не установлен или не зарегистрирован в системе.</value>
+  </data>
+  <data name="ErrorVMNoVideoInputDevice" xml:space="preserve">
+    <value>Не выбрано устройство видеозахвата.</value>
+  </data>
+  <data name="ImagingCollectionHide" xml:space="preserve">
+    <value>Скрыть галерею снимков</value>
+  </data>
+  <data name="ImagingCollectionShow" xml:space="preserve">
+    <value>Показать галерею снимков</value>
+  </data>
+  <data name="ImagingSnapshotCount" xml:space="preserve">
+    <value>Количество снимков: {0}</value>
+    <comment>{0}=count</comment>
+  </data>
+  <data name="ImagingThumbnailsUpdating" xml:space="preserve">
+    <value>Идет фоновое обновление миниатюр ({0}% выполнено)...</value>
+    <comment>{0}=Percentage</comment>
+  </data>
+  <data name="InfoCapture" xml:space="preserve">
+    <value>Видеозахват через {0}, {1}x{2}</value>
+    <comment>{0}=device;{1}=width;{2}=height</comment>
+  </data>
+  <data name="InfoSnapshot" xml:space="preserve">
+    <value>Снимок {0}x{1}</value>
+    <comment>{0}=width;{1}=height</comment>
+  </data>
+  <data name="NavBack" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="NavBackFmt" xml:space="preserve">
+    <value>Назад на '{0}'</value>
+  </data>
+  <data name="NavForward" xml:space="preserve">
+    <value>Вперед</value>
+  </data>
+  <data name="NavForwardFmt" xml:space="preserve">
+    <value>Вперед на '{0}'</value>
+  </data>
+  <data name="NavHistoryTitle" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0}=Hosted control caption; {1}=Hosted control details</comment>
+  </data>
+  <data name="NewIndicationCategory" xml:space="preserve">
+    <value>Новая категория</value>
+  </data>
+  <data name="NewIndicationDefinition" xml:space="preserve">
+    <value>Новый признак</value>
+  </data>
+  <data name="OptionPageGeneral" xml:space="preserve">
+    <value>Общие</value>
+  </data>
+  <data name="OptionPageVideo" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="RepBirthdate" xml:space="preserve">
+    <value>Дата рождения:</value>
+  </data>
+  <data name="RepConclusion" xml:space="preserve">
+    <value>Заключение</value>
+  </data>
+  <data name="RepExaminationDate" xml:space="preserve">
+    <value>Дата обследования:</value>
+  </data>
+  <data name="RepExaminationKind" xml:space="preserve">
+    <value>Вид обледования:</value>
+  </data>
+  <data name="RepGenderFemale" xml:space="preserve">
+    <value>Ж</value>
+  </data>
+  <data name="RepGenderMale" xml:space="preserve">
+    <value>М</value>
+  </data>
+  <data name="RepIndications" xml:space="preserve">
+    <value>Признаки</value>
+  </data>
+  <data name="RepNoConclusion" xml:space="preserve">
+    <value>Заключение не введено.</value>
+  </data>
+  <data name="RepNoIndications" xml:space="preserve">
+    <value>Не отмечен ни один признак.</value>
+  </data>
+  <data name="RepPatient" xml:space="preserve">
+    <value>Пациент:</value>
+  </data>
+  <data name="RepPhysician" xml:space="preserve">
+    <value>Врач</value>
+  </data>
+  <data name="RepSignDate" xml:space="preserve">
+    <value>"_____"____________20____г.</value>
+  </data>
+  <data name="RollExamination" xml:space="preserve">
+    <value>Обследования</value>
+  </data>
+  <data name="RollExaminationKind" xml:space="preserve">
+    <value>Вид обследования</value>
+  </data>
+  <data name="RollExaminationKind_" xml:space="preserve">
+    <value>Вид обследования</value>
+  </data>
+  <data name="RollExaminationPatient" xml:space="preserve">
+    <value>Пациент</value>
+  </data>
+  <data name="RollExaminationPerformDate" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="RollNamedEntityName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="RollPatient" xml:space="preserve">
+    <value>Пациенты</value>
+  </data>
+  <data name="RollPatientBirthDate" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="RollPatientFamilyName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="RollPatientFirstName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="RollPatientMiddleName" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="RollPhysician" xml:space="preserve">
+    <value>Врачи</value>
+  </data>
+  <data name="StatusCreateReport" xml:space="preserve">
+    <value>Формирование отчета...</value>
+  </data>
+  <data name="StatusDeleting" xml:space="preserve">
+    <value>Удаление элементов...</value>
+  </data>
+  <data name="StatusLoading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="StatusLoadingConfig" xml:space="preserve">
+    <value>Загрузка конфигурации...</value>
+  </data>
+  <data name="StatusLoadingData" xml:space="preserve">
+    <value>Загрузка данных...</value>
+  </data>
+  <data name="StatusOpenDatabase" xml:space="preserve">
+    <value>Подключение к базе данных...</value>
+  </data>
+  <data name="StatusOpenView" xml:space="preserve">
+    <value>Загрузка представления...</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="StatusSavingData" xml:space="preserve">
+    <value>Сохранение данных...</value>
+  </data>
+  <data name="StatusShutdown" xml:space="preserve">
+    <value>Завершение работы программы...</value>
+  </data>
+  <data name="StatusSnapshot" xml:space="preserve">
+    <value>Сохранение снимка...</value>
+  </data>
+  <data name="TaskGroupCreate" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="TaskGroupSearch" xml:space="preserve">
+    <value>Архив</value>
+  </data>
+  <data name="TaskNewExamination" xml:space="preserve">
+    <value>Новое обследование</value>
+  </data>
+  <data name="TaskNewPatient" xml:space="preserve">
+    <value>Новый пациент</value>
+  </data>
+  <data name="TaskPatients" xml:space="preserve">
+    <value>Список пациентов</value>
+  </data>
+  <data name="ViewExamination" xml:space="preserve">
+    <value>Обследование</value>
+  </data>
+  <data name="ViewImaging" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="ViewPatient" xml:space="preserve">
+    <value>Пациент</value>
+  </data>
+  <data name="ViewRoll" xml:space="preserve">
+    <value>Картотека</value>
+  </data>
+  <data name="ViewTaskPad" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+</root>

@@ -1,0 +1,453 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A608211-39E3-47B1-BAE9-81194A7B84FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gyrosoft.Medea</RootNamespace>
+    <AssemblyName>Medea</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <StartupObject>Gyrosoft.Medea.Program</StartupObject>
+    <PublishUrl>http://localhost/Medea/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShowLib-2005, Version=1.5.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WinForms\DxCaptureBoxControl\DxCaptureBoxControl\bin\Release\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="DxCaptureBoxControl, Version=1.0.2599.41491, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WinForms\DxCaptureBoxControl\DxCaptureBoxControl\bin\Release\DxCaptureBoxControl.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Config\ConfigManagerBase.cs" />
+    <Compile Include="Config\IRollColumnConfig.cs" />
+    <Compile Include="Config\IRollConfig.cs" />
+    <Compile Include="Config\ITaskConfig.cs" />
+    <Compile Include="Config\ITaskGroupConfig.cs" />
+    <Compile Include="Config\IViewFactoryConfig.cs" />
+    <Compile Include="Config\StaticConfigManager.cs" />
+    <Compile Include="Gui\Dialogs\DepartmentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\DepartmentDialog.Designer.cs">
+      <DependentUpon>DepartmentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Dialogs\PersonalizationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\PersonalizationDialog.Designer.cs">
+      <DependentUpon>PersonalizationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\AppMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\AppMainForm.Designer.cs">
+      <DependentUpon>AppMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\AppStartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\AppStartForm.Designer.cs">
+      <DependentUpon>AppStartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Dialogs\RollDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\RollDialog.Designer.cs">
+      <DependentUpon>RollDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Dialogs\PhysicianDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\PhysicianDialog.Designer.cs">
+      <DependentUpon>PhysicianDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\PrintableRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Controls\PrintableRichTextBox.Designer.cs">
+      <DependentUpon>PrintableRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Dialogs\PrintExaminationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\PrintExaminationDialog.Designer.cs">
+      <DependentUpon>PrintExaminationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Views\ImagingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Views\ImagingView.Designer.cs">
+      <DependentUpon>ImagingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Views\PatientView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Views\PatientView.Designer.cs">
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Views\RollView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Views\RollView.Designer.cs">
+      <DependentUpon>RollView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Views\ExaminationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Views\ExaminationView.Designer.cs">
+      <DependentUpon>ExaminationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\ImageCollectionListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Controls\ImageCollectionListView.Designer.cs">
+      <DependentUpon>ImageCollectionListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\ImageCollectionListViewItem.cs" />
+    <Compile Include="Gui\Dialogs\OptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Dialogs\OptionDialog.Designer.cs">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\OptionPages\OptionDialogPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Controls\OptionPages\OptionDialogPage.Designer.cs">
+      <DependentUpon>OptionDialogPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\OptionPages\GeneralOptionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Controls\OptionPages\GeneralOptionPage.Designer.cs">
+      <DependentUpon>GeneralOptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\OptionPages\VideoOptionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Controls\OptionPages\VideoOptionPage.Designer.cs">
+      <DependentUpon>VideoOptionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Views\TaskView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Views\TaskView.Designer.cs">
+      <DependentUpon>TaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Controls\ViewHost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Controls\ViewHost.Designer.cs">
+      <DependentUpon>ViewHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\ImageCollection.cs" />
+    <Compile Include="Imaging\ImageCollectionItem.cs" />
+    <Compile Include="Imaging\Thumbnail.cs" />
+    <Compile Include="Imaging\ThumbnailUpdateWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Licensing\ILicenseInfo.cs" />
+    <Compile Include="Licensing\LicenseInfoHelper.cs" />
+    <Compile Include="Licensing\LicenseManager.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gui\Dialogs\DepartmentDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DepartmentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\DepartmentDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DepartmentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\AboutDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\AboutDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\PersonalizationDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonalizationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\PersonalizationDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PersonalizationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\PrintExaminationDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintExaminationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\RollDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RollDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\AppMainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\AppMainForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\AppStartForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppStartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\RollDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RollDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\PhysicianDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PhysicianDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\PhysicianDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PhysicianDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\PrintExaminationDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintExaminationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\ImagingView.resx">
+      <DependentUpon>ImagingView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\ImagingView.ru.resx">
+      <DependentUpon>ImagingView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\PatientView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\PatientView.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\RollView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RollView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\ExaminationView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExaminationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\ExaminationView.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExaminationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\OptionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Dialogs\OptionDialog.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Controls\OptionPages\OptionDialogPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionDialogPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Controls\OptionPages\GeneralOptionPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralOptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Controls\OptionPages\VideoOptionPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VideoOptionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\RollView.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RollView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Views\TaskView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Controls\ViewHost.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Controls\ViewHost.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavBack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavForward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dial.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPicture.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPhotos.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrangeSideBySide.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightArrow2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.bmp" />
+    <None Include="Resources\EmptyIndication.bmp" />
+    <None Include="Resources\SuccessComplete.bmp" />
+    <None Include="Resources\VSFolder_closed_hidden.bmp" />
+    <None Include="Resources\VSFolder_open_hidden.bmp" />
+    <None Include="Resources\Comment.bmp" />
+    <None Include="Resources\Progress.bmp" />
+    <None Include="Resources\camera.bmp" />
+    <None Include="Resources\Pause.bmp" />
+    <None Include="Resources\none.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resources\MedeaSplash2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedeaLib\MedeaLib.csproj">
+      <Project>{23A5E2AC-D1BF-4250-AB3C-C125D3351CDB}</Project>
+      <Name>MedeaLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTable.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditTable.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchPeople.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToNext.bmp" />
+    <None Include="Resources\gotoprevious.bmp" />
+    <None Include="Resources\Print.bmp" />
+    <None Include="Resources\MedeaSplash3.jpg" />
+    <Content Include="Resources\search4people.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

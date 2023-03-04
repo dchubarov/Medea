@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationAboutMenuItemFmt" xml:space="preserve">
+    <value>&amp;About {0}...</value>
+    <comment>{0}=ApplicationTitle</comment>
+  </data>
+  <data name="ApplicationFormCaptionFmt" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>{0}=ApplicationTitle; {1}=Edition</comment>
+  </data>
+  <data name="ApplicationFormCaptionFmtWithVersion" xml:space="preserve">
+    <value>{0} Version {2} {1}</value>
+    <comment>{0}=ApplicationTitle; {1}=Edition; {2}=Version</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>Medea</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BitmapAddRecord_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddTable.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapCamera_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camera.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapComment_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Comment.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapCurrentItem_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RightArrow2.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapDial_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dial.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapEditRecord_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditTable.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapExamination_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\searchPeople.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapGoToNext_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoToNext.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapGoToPrevious_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gotoprevious.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapHelp_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapHome_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapNavBack_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavBack.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapNavForward_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavForward.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapNone_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\none.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapOptions_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Options.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapPause_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapPicture_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertPicture.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapPictures_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertPhotos.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapPlay_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapPrint_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapProgress_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Progress.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapRefresh_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapSave_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapSplash_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MedeaSplash3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapStop_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BitmapTask_HighColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Task.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ButtonChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>AzimuthPlus</value>
+  </data>
+  <data name="ConfirmDeleteEntity" xml:space="preserve">
+    <value>Are you sure you want to delete this entity?</value>
+  </data>
+  <data name="ConfirmDeleteItem" xml:space="preserve">
+    <value>Are you sure you want to delete '{0}'?</value>
+    <comment>{0}=Item name</comment>
+  </data>
+  <data name="ConfirmDeleteSnapshots" xml:space="preserve">
+    <value>Delete {0} snapshots?</value>
+    <comment>{0}=count</comment>
+  </data>
+  <data name="ConfirmDeleteTree" xml:space="preserve">
+    <value>Are you sure you want to delete '{0}' and all its descendants?</value>
+    <comment>{0}=Item name</comment>
+  </data>
+  <data name="ConfirmSaveExamination" xml:space="preserve">
+    <value>Save examination changes?</value>
+  </data>
+  <data name="ConfirmSavePatient" xml:space="preserve">
+    <value>Save patient file?</value>
+  </data>
+  <data name="EditionDemo" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="EditionEnterprise" xml:space="preserve">
+    <value>Enterprise Edition</value>
+  </data>
+  <data name="EditionPersonal" xml:space="preserve">
+    <value>Personal Edition</value>
+  </data>
+  <data name="ErrorCreateIndicationCategory" xml:space="preserve">
+    <value>Could not create new indication category.</value>
+  </data>
+  <data name="ErrorCreateIndicationDefinition" xml:space="preserve">
+    <value>Could not create new indication definition.</value>
+  </data>
+  <data name="ErrorDeleteEntity" xml:space="preserve">
+    <value>Could not delete entity linked by another entities.</value>
+  </data>
+  <data name="ErrorEmptyName" xml:space="preserve">
+    <value>Entity name cannot be blank or consist of whitespace only.</value>
+  </data>
+  <data name="ErrorExaminationValidation" xml:space="preserve">
+    <value>Examination validation failed:</value>
+  </data>
+  <data name="ErrorExaminationValidationKind" xml:space="preserve">
+    <value>Invalid examination kind.</value>
+  </data>
+  <data name="ErrorExaminationValidationPatient" xml:space="preserve">
+    <value>Invalid patient.</value>
+  </data>
+  <data name="ErrorExaminationValidationPhysician" xml:space="preserve">
+    <value>Invalid physician.</value>
+  </data>
+  <data name="ErrorHResult" xml:space="preserve">
+    <value>COM Error 0x{0:X}.</value>
+  </data>
+  <data name="ErrorImproperConfiguration" xml:space="preserve">
+    <value>Improper configuration. Please reinstall the application.</value>
+  </data>
+  <data name="ErrorIndicationUsed" xml:space="preserve">
+    <value>Indication '{0}' is in use.</value>
+  </data>
+  <data name="ErrorInvalidName" xml:space="preserve">
+    <value>The specified name is invalid.</value>
+  </data>
+  <data name="ErrorSaveData" xml:space="preserve">
+    <value>Unable to save data.</value>
+  </data>
+  <data name="ErrorShowOptionPage" xml:space="preserve">
+    <value>Could not display option page.</value>
+  </data>
+  <data name="ErrorVMBadDeviceName" xml:space="preserve">
+    <value>Could not find device '{0}'.</value>
+    <comment>{0}=Device name</comment>
+  </data>
+  <data name="ErrorVMBadDirectXVersion" xml:space="preserve">
+    <value>DirectX version 8.1 or later is not installed.</value>
+  </data>
+  <data name="ErrorVMBadGrabberMediaFormat" xml:space="preserve">
+    <value>Invalid grabber media format.</value>
+  </data>
+  <data name="ErrorVMCantGrab" xml:space="preserve">
+    <value>Could not grab picture.</value>
+  </data>
+  <data name="ErrorVMInvalidVideoWindow" xml:space="preserve">
+    <value>Specified window is unable to display video stream.</value>
+  </data>
+  <data name="ErrorVMNoFilterGraph" xml:space="preserve">
+    <value>DirectShow FilterGraph is not installed.</value>
+  </data>
+  <data name="ErrorVMNoSampleGrabber" xml:space="preserve">
+    <value>DirectShow SampleGrabber is not installed.</value>
+  </data>
+  <data name="ErrorVMNoVideoInputDevice" xml:space="preserve">
+    <value>No video input device selected.</value>
+  </data>
+  <data name="ImagingCollectionHide" xml:space="preserve">
+    <value>Hide image collection</value>
+  </data>
+  <data name="ImagingCollectionShow" xml:space="preserve">
+    <value>Show image collection</value>
+  </data>
+  <data name="ImagingSnapshotCount" xml:space="preserve">
+    <value>{0} snapshot(s)</value>
+    <comment>{0}=count</comment>
+  </data>
+  <data name="ImagingThumbnailsUpdating" xml:space="preserve">
+    <value>Updating thumbnails ({0}% done)...</value>
+    <comment>{0}=Percentage</comment>
+  </data>
+  <data name="InfoCapture" xml:space="preserve">
+    <value>Capture {0}, {1}x{2}</value>
+    <comment>{0}=device;{1}=width;{2}=height</comment>
+  </data>
+  <data name="InfoSnapshot" xml:space="preserve">
+    <value>Snapshot {0}x{1}</value>
+    <comment>{0}=width;{1}=height</comment>
+  </data>
+  <data name="NavBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="NavBackFmt" xml:space="preserve">
+    <value>Back to {0}</value>
+  </data>
+  <data name="NavForward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="NavForwardFmt" xml:space="preserve">
+    <value>Forward to {0}</value>
+  </data>
+  <data name="NavHistoryTitle" xml:space="preserve">
+    <value>{0}: {1}</value>
+    <comment>{0}=Hosted control caption; {1}=Hosted control details</comment>
+  </data>
+  <data name="NewIndicationCategory" xml:space="preserve">
+    <value>New category</value>
+  </data>
+  <data name="NewIndicationDefinition" xml:space="preserve">
+    <value>New indication definition</value>
+  </data>
+  <data name="OptionPageGeneral" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="OptionPageVideo" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="RepBirthdate" xml:space="preserve">
+    <value>Birth date:</value>
+  </data>
+  <data name="RepConclusion" xml:space="preserve">
+    <value>Conclusion</value>
+  </data>
+  <data name="RepExaminationDate" xml:space="preserve">
+    <value>Examination date:</value>
+  </data>
+  <data name="RepExaminationKind" xml:space="preserve">
+    <value>Examination kind:</value>
+  </data>
+  <data name="RepGenderFemale" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="RepGenderMale" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="RepIndications" xml:space="preserve">
+    <value>Indications</value>
+  </data>
+  <data name="RepNoConclusion" xml:space="preserve">
+    <value>No conclusion entered.</value>
+  </data>
+  <data name="RepNoIndications" xml:space="preserve">
+    <value>No indications.</value>
+  </data>
+  <data name="RepPatient" xml:space="preserve">
+    <value>Patient:</value>
+  </data>
+  <data name="RepPhysician" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="RepSignDate" xml:space="preserve">
+    <value>"_____"____________20____</value>
+  </data>
+  <data name="RollExamination" xml:space="preserve">
+    <value>Examinations</value>
+  </data>
+  <data name="RollExaminationKind" xml:space="preserve">
+    <value>Examination kind</value>
+  </data>
+  <data name="RollExaminationKind_" xml:space="preserve">
+    <value>Examination kind</value>
+  </data>
+  <data name="RollExaminationPatient" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="RollExaminationPerformDate" xml:space="preserve">
+    <value>Perform date</value>
+  </data>
+  <data name="RollNamedEntityName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="RollPatient" xml:space="preserve">
+    <value>Patients</value>
+  </data>
+  <data name="RollPatientBirthDate" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="RollPatientFamilyName" xml:space="preserve">
+    <value>Family name</value>
+  </data>
+  <data name="RollPatientFirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="RollPatientMiddleName" xml:space="preserve">
+    <value>Middle name</value>
+  </data>
+  <data name="RollPhysician" xml:space="preserve">
+    <value>Physicians</value>
+  </data>
+  <data name="StatusCreateReport" xml:space="preserve">
+    <value>Creating report...</value>
+  </data>
+  <data name="StatusDeleting" xml:space="preserve">
+    <value>Deleting item(s)...</value>
+  </data>
+  <data name="StatusLoading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="StatusLoadingConfig" xml:space="preserve">
+    <value>Loading configuration...</value>
+  </data>
+  <data name="StatusLoadingData" xml:space="preserve">
+    <value>Loading data...</value>
+  </data>
+  <data name="StatusOpenDatabase" xml:space="preserve">
+    <value>Connecting to database...</value>
+  </data>
+  <data name="StatusOpenView" xml:space="preserve">
+    <value>Opening view...</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="StatusSavingData" xml:space="preserve">
+    <value>Saving data...</value>
+  </data>
+  <data name="StatusShutdown" xml:space="preserve">
+    <value>Shutting down...</value>
+  </data>
+  <data name="StatusSnapshot" xml:space="preserve">
+    <value>Saving snapshot...</value>
+  </data>
+  <data name="TaskGroupCreate" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="TaskGroupSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="TaskNewExamination" xml:space="preserve">
+    <value>New Examination</value>
+  </data>
+  <data name="TaskNewPatient" xml:space="preserve">
+    <value>New Patient</value>
+  </data>
+  <data name="TaskPatients" xml:space="preserve">
+    <value>Patients</value>
+  </data>
+  <data name="ViewExamination" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="ViewImaging" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="ViewPatient" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="ViewRoll" xml:space="preserve">
+    <value>Roll</value>
+  </data>
+  <data name="ViewTaskPad" xml:space="preserve">
+    <value>Task Pad</value>
+  </data>
+</root>
